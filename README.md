@@ -44,15 +44,15 @@ An open source application for Android. It is used to display reviews, contact i
 - Open it with Android Studio
 - Execute, modify, ... 
 
+## Minimum Android Version
+Android 4.2 - SDK 17
+
 ## Personal PHP API
 A personal PHP API has been used to link the remote database and the Android application.<br>
 Here you can find the link to the source code: <a href="https://github.com/Beber54/StreetHistory-PHP-API">StreetHistory PHP API</a>
 
 ## Contribution
 If you have any ideas, do not hesitate to contact me. Every contribution is welcome.
-
-## Minimum Android Version
-Android 4.2 - SDK 17
 
 ## Versions
 #### 0.1.0 - First Version - 09.05.2017
