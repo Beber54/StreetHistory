@@ -45,7 +45,8 @@ An open source application for Android. It is used to display reviews, contact i
 - Execute, modify, ... 
 
 ## Minimum Android Version
-Android 4.2 - SDK 17
+Android 4.2 (Jelly Bean)
+SDK 17
 
 ## Personal PHP API
 A personal PHP API has been used to link the remote database and the Android application.<br>
