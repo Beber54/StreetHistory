@@ -39,6 +39,10 @@ An open source application for Android. It is used to display reviews, contact i
 - Notifications (Toasts)
 
 ## Usage
+- Fork this repository
+- Clone it on your own computer
+- Open it with Android Studio
+- Execute, modify, ... 
 
 ## Personal PHP API
 A personal PHP API has been used to link the remote database and the Android application.<br>
@@ -47,8 +51,11 @@ Here you can find the link to the source code: <a href="https://github.com/Beber
 ## Contribution
 If you have any ideas, do not hesitate to contact me. Every contribution is welcome.
 
+## Minimum Android Version
+Android 4.2 - SDK 17
+
 ## Versions
-#### 0.1.0 - First Version - 08.05.2017
+#### 0.1.0 - First Version - 09.05.2017
 - Visualize a map with markers
 - Access historical description, reviews & contact information
 - Create a new marker (new building)
