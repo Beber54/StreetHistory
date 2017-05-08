@@ -1,6 +1,9 @@
 # StreetHistory
 <b>Student Project - Android Application Development - Metropolia University - Spring 2017</b>
-
+<br>
+By <i>Bertrand Müller</i>
+<br>
+<br>
 An open source application for Android. It is used to display reviews, contact information and an historical description about a place. It gathers data from a personal API, Google Maps & Google Places.
 
 ## Idea
