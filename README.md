@@ -1,6 +1,9 @@
 # StreetHistory
 <b>Student Project - Android Application Development - Metropolia University - Spring 2017</b>
-
+<br>
+By <i>Bertrand Müller</i>
+<br>
+<br>
 An open source application for Android. It is used to display reviews, contact information and an historical description about a place. It gathers data from a personal API, Google Maps & Google Places.
 
 ## Idea
@@ -35,9 +38,18 @@ An open source application for Android. It is used to display reviews, contact i
 - Networking (HttpURLConnection)
 - Notifications (Toasts)
 
+## Usage
+
+## Personal PHP API
+A personal PHP API has been used to link the remote database and the Android application.<br>
+Here you can find the link to the source code: <a href="https://github.com/Beber54/StreetHistory-PHP-API">StreetHistory PHP API</a>
+
 ## Contribution
 If you have any ideas, do not hesitate to contact me. Every contribution is welcome.
 
-## Personal PHP API
-A personal PHP APi has been used to link the remote database and the Android application.<br>
-Here you can find the link to the source code: 
+## Versions
+#### 0.1.0 - First Version - 08.05.2017
+- Visualize a map with markers
+- Access historical description, reviews & contact information
+- Create a new marker (new building)
+- Change the map style
