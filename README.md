@@ -35,9 +35,11 @@ An open source application for Android. It is used to display reviews, contact i
 - Networking (HttpURLConnection)
 - Notifications (Toasts)
 
+## Usage
+
 ## Personal PHP API
 A personal PHP API has been used to link the remote database and the Android application.<br>
-Here you can find the link to the source code: <a href="https://github.com/Beber54/StreetHistory-PHP-API">StreetHistory-PHP-API</a>
+Here you can find the link to the source code: <a href="https://github.com/Beber54/StreetHistory-PHP-API">StreetHistory PHP API</a>
 
 ## Contribution
 If you have any ideas, do not hesitate to contact me. Every contribution is welcome.
