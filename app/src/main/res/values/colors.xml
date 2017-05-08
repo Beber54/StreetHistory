@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#fbc5c2c2</color>
+    <color name="iconNavigation">#00796B</color>
+    <color name="textNavigation">#00796B</color>
+    <color name="tab_checked">#228c80</color>
+    <color name="tab_disable">#27000000</color>
+    <color name="settings">#e9fbfbfb</color>
+    <color name="black">#000000</color>
+    <color name="popupBackground">#ab019a76</color>
+    <color name="darkGray">#8e8989</color>
+</resources>

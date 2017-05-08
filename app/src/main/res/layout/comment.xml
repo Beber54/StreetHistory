@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iconStar"
+        android:layout_width="wrap_content"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/star"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignTop="@+id/iconStar"
+        android:layout_toStartOf="@+id/iconStar"
+        android:gravity="center"
+        android:id="@+id/numberOfStars"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/iconStar" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="310dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tab_checked"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/numberOfStars"
+        android:layout_alignTop="@+id/numberOfStars"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="45dp"
+        android:layout_below="@+id/author"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

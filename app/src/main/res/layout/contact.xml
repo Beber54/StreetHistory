@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlContactFirst" >
+
+                <ImageView
+                    android:id="@+id/contactImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/image_of_the_place" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarContactImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    android:indeterminateDrawable="@drawable/customprogressbar"/>
+
+                <TextView
+                    android:id="@+id/loadingContactImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/gray"
+                    android:layout_below="@+id/progressBarContactImg"
+                    android:text="@string/loading_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rlContactFirst"
+                android:visibility="visible"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/contactInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="@string/information"
+                    android:textColor="@color/tab_checked"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"/>
+
+                <WebView
+                    android:id="@+id/contactInformationWV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:layout_below="@+id/contactInformation"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:visibility="visible"
+                    android:indeterminateDrawable="@drawable/customprogressbar"/>
+
+                <TextView
+                    android:id="@+id/loadingContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/gray"
+                    android:text="@string/loading_contact_information"
+                    android:layout_below="@+id/progressBarContact"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

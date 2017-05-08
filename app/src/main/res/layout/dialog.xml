@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorLayout" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        android:fitsSystemWindows="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarDialog"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/tab_checked"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/textViewNamePlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/name"
+            android:textColor="@color/darkGray"
+            android:labelFor="@+id/editNamePlace"/>
+
+        <EditText
+            android:id="@+id/editNamePlace"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewNamePlace"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="40dp"
+            android:background="@drawable/customborders"
+            android:gravity="top"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/textViewDescPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/editNamePlace"
+            android:text="@string/description"
+            android:textColor="@color/darkGray"
+            android:labelFor="@+id/editDescPlace"/>
+
+        <EditText
+            android:id="@+id/editDescPlace"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDescPlace"
+            android:background="@drawable/customborders"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:minHeight="200dp"
+            android:gravity="top"
+            android:text=""
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

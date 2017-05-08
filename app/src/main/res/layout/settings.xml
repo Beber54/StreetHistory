@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings">
+
+    <TextView
+        android:id="@+id/mapStyleTitle"
+        android:textColor="@color/tab_checked"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/map_style"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/firtLineStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapStyleTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp" >
+
+        <ImageView
+            android:id="@+id/mapStyleStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/standard"
+            android:clickable="true"
+            android:background="@drawable/custom_borders_map_style"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:src="@drawable/standard"
+            android:contentDescription="@string/map_style_standard"
+            android:layout_marginStart="5dp"
+            android:layout_alignTop="@+id/mapStyleRetro"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/mapStyleRetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:tag="@string/retro"
+            android:clickable="true"
+            android:background="@drawable/custom_borders_map_style"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:src="@drawable/retro"
+            android:contentDescription="@string/map_style_retro"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/mapStyleStandard"
+            android:scaleType="centerCrop"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mapStyleStandard"
+            android:layout_alignTop="@+id/mapStyleStandard"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:textColorHint="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/tab_checked"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignStart="@+id/mapStyleRetro"
+            android:layout_alignTop="@+id/mapStyleRetro" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondLineStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firtLineStyles"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp" >
+
+        <ImageView
+            android:id="@+id/mapStyleNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/night"
+            android:clickable="true"
+            android:background="@drawable/custom_borders_map_style"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:src="@drawable/night"
+            android:contentDescription="@string/map_style_night"
+            android:layout_marginStart="5dp"
+            android:layout_alignTop="@+id/mapStyleAubergine"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/mapStyleAubergine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:tag="@string/aubergine"
+            android:clickable="true"
+            android:background="@drawable/custom_borders_map_style"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:src="@drawable/aubergine"
+            android:contentDescription="@string/map_style_aubergine"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/mapStyleNight"
+            android:scaleType="centerCrop"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mapStyleNight"
+            android:layout_alignTop="@+id/mapStyleNight"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:textColorHint="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAubergine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/tab_checked"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignStart="@+id/mapStyleAubergine"
+            android:layout_alignTop="@+id/mapStyleAubergine" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
