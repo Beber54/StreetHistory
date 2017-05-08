@@ -45,7 +45,7 @@ An open source application for Android. It is used to display reviews, contact i
 - Execute, modify, ... 
 
 ## Minimum Android Version
-Android 4.2 (Jelly Bean)
+Android 4.2 (Jelly Bean)<br>
 SDK 17
 
 ## Personal PHP API
