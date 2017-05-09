@@ -5,6 +5,8 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,9 +36,20 @@ public class HistoryFragment extends Fragment {
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.history, container, false);
         setRetainInstance(true);
+
+        ImageView edit = (ImageView) view.findViewById(R.id.editHistoricalDesc);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayPopupEdit();
+            }
+        });
+
         return view;
+
     }
 
 
@@ -79,7 +92,8 @@ public class HistoryFragment extends Fragment {
 
             // Creating the HTML content for the Web View
             String htmlText = " %s ";
-            String data = "<body style=\"text-align: justify; font-size: 0.9em;\">" + activity.getBuilding().getDescription() + "</body>";
+            String desc = activity.getBuilding().getDescription().replace("\n", "<br>");
+            String data = "<body style=\"text-align: justify; font-size: 0.9em;\">" + desc + "</body>";
             WebView webView = (WebView) getView().findViewById(R.id.descWeb);
             webView.loadData(String.format(htmlText, data), "text/html", "utf-8");
 
@@ -87,6 +101,7 @@ public class HistoryFragment extends Fragment {
             getView().findViewById(R.id.progressBarDesc).setVisibility(View.GONE);
             getView().findViewById(R.id.loadingDesc).setVisibility(View.GONE);
             getView().findViewById(R.id.historicalDescription).setVisibility(View.VISIBLE);
+            getView().findViewById(R.id.editHistoricalDesc).setVisibility(View.VISIBLE);
 
         }
 
@@ -130,6 +145,25 @@ public class HistoryFragment extends Fragment {
             getView().findViewById(R.id.loadingDescImg).setVisibility(View.GONE);
 
         }
+
+    }
+
+
+    private void displayPopupEdit() {
+
+        UpdatePlaceDialog updatePlaceDialog = new UpdatePlaceDialog();
+        updatePlaceDialog.setHistoryFragment(this);
+        Bundle bundle = new Bundle();
+        bundle.putString("desc", activity.getBuilding().getDescription());
+        bundle.putDouble("latitude", activity.getBuilding().getLatitude());
+        bundle.putDouble("longitude", activity.getBuilding().getLongitude());
+        updatePlaceDialog.setArguments(bundle);
+
+        FragmentManager fragmentManager = activity.getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(android.R.id.content, updatePlaceDialog);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
     }
 

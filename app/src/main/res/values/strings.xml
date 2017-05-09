@@ -35,4 +35,6 @@
     <string name="night">night</string>
     <string name="map_style_night">Map Style Night</string>
     <string name="map_style_aubergine">Map Style Aubergine</string>
+    <string name="modify_desc_icon">Modify Desc Icon</string>
+    <string name="modify_historical_description">Modify Historical Description</string>
 </resources>

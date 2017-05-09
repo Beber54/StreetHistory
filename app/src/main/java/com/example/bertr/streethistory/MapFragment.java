@@ -156,7 +156,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback,
 
         if(loc != null) {
             LatLng marker = new LatLng(loc.getLatitude(), loc.getLongitude());
-            CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(marker, 17);
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(marker, 15);
             mapGoogle.animateCamera(cameraUpdate);
         }
 

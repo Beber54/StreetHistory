@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme"
+        android:fitsSystemWindows="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarDialogEdit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/tab_checked"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/editDescPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:layout_gravity="top|start"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/modifyHistoricalDescTitle"/>
+
+    <TextView
+        android:id="@+id/modifyHistoricalDescTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modify_historical_description"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tab_checked"
+        android:textSize="16sp"
+        android:labelFor="@id/editDescPopup"
+        android:layout_below="@id/appBar"/>
+
+</RelativeLayout>
